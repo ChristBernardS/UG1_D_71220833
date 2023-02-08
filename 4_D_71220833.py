@@ -11,19 +11,33 @@ def total_nilai(a, b, c):
         print(f"Total Nilai Dalam Huruf : B")
     elif total > 79 and total <= 100:
         print(f"Total Nilai Dalam Huruf : A")
+    # return total
 
-# print(f"{8*'-'}Nilai ke 1 {8*'-'}")
+# def total_nilai_huruf(total):
+#     if total <= 19:
+#         print(f"Total Nilai Dalam Huruf : E")
+#     elif total > 19 and total <= 39:
+#         print(f"Total Nilai Dalam Huruf : D")
+#     elif total > 39 and total <= 59:
+#         print(f"Total Nilai Dalam Huruf : C")
+#     elif total > 59 and total <= 79:
+#         print(f"Total Nilai Dalam Huruf : B")
+#     elif total > 79 and total <= 100:
+#         print(f"Total Nilai Dalam Huruf : A")
 
-for i in range(8):
-    print('-', end='')
+def ngulang():
+    for i in range(8):
+        print('-',end='')
+    return i
+
+ngulang()
 print(f"Nilai ke 1 {'-'*8}")
 
 nilai1 = int(input('Nilai Harian : '))
 nilai2 = int(input('Nilai UTS : '))
 nilai3 = int(input('Nilai UAS : '))
 
-for i in range(8):
-    print('-', end='')
+ngulang()
 print(f"Nilai ke 2 {'-'*8}")
 nilai4 = int(input('Nilai Harian : '))
 nilai5 = int(input('Nilai UTS : '))
@@ -34,3 +48,4 @@ total_UTS = (nilai2 + nilai5)/2
 total_UAS = (nilai3 + nilai6)/2
 
 total_nilai(total_tugas, total_UTS, total_UAS)
+# total_nilai_huruf(total_nilai)
