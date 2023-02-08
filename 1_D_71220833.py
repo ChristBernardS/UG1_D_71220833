@@ -8,6 +8,7 @@ n = 1
 while True:
     pilihan = str(input('Apakah anda membeli barang lagi? [yes/no] : '))
     total_belanja = sum(total_harga)
+    pilihan = pilihan.lower()
     if pilihan == 'yes':
         print()
         harga_barang2 = int(input('Harga Barang : '))
