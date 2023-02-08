@@ -13,6 +13,8 @@ while True:
         harga_barang2 = int(input('Harga Barang : '))
         total_harga[n] = harga_barang2
         n += 1
-    if pilihan == 'no':
+    elif pilihan == 'no':
         print(f'\nTOTAL BELANJA : {total_belanja}')
         break
+    else:
+        print('\nINVALID')
