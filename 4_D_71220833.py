@@ -1,5 +1,8 @@
 def total_nilai(a, b, c):
     total = ((a*30/100)+(b*30/100)+(c*40/100))
+    return total
+
+def total_nilai_huruf(total):
     print(f"Total nilai yang didapat : {total}")
     if total <= 19:
         print(f"Total Nilai Dalam Huruf : E")
@@ -11,19 +14,6 @@ def total_nilai(a, b, c):
         print(f"Total Nilai Dalam Huruf : B")
     elif total > 79 and total <= 100:
         print(f"Total Nilai Dalam Huruf : A")
-    # return total
-
-# def total_nilai_huruf(total):
-#     if total <= 19:
-#         print(f"Total Nilai Dalam Huruf : E")
-#     elif total > 19 and total <= 39:
-#         print(f"Total Nilai Dalam Huruf : D")
-#     elif total > 39 and total <= 59:
-#         print(f"Total Nilai Dalam Huruf : C")
-#     elif total > 59 and total <= 79:
-#         print(f"Total Nilai Dalam Huruf : B")
-#     elif total > 79 and total <= 100:
-#         print(f"Total Nilai Dalam Huruf : A")
 
 def ngulang():
     for i in range(8):
@@ -48,4 +38,4 @@ total_UTS = (nilai2 + nilai5)/2
 total_UAS = (nilai3 + nilai6)/2
 
 total_nilai(total_tugas, total_UTS, total_UAS)
-# total_nilai_huruf(total_nilai)
+total_nilai_huruf(total_nilai(total_tugas, total_UTS, total_UAS))
